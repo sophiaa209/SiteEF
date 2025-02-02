@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="assets/js/slideshow.js"></script>
+
+    <title>Eastern Foxes</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,-25" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png">
+    <script>
+      // wait until the page is loaded
+      $(document).ready(function() {
+          if ($(window).width() < 1500) {
+              $("#team").html(team_icon);
+              $("#robots").html(robots_icon);
+              $("#achievements").html(achievements_icon);
+              $("#contact").html(contact_icon);
+          } else {
+              $("#team").html(team_text);
+              $("#robots").html(robots_text);
+              $("#achievements").html(achievements_text);
+              $("#contact").html(contact_text);
+          }
+          // $(".logo").click(function() {
+          //       window.location.href = "index.html";
+          //   });
+      });
+
+
+
+  </script>
+</head>
+<body>
+    <div id="root">
+        <div class="logo">
+          <a class="logo" href="index.html">
+            <img src="assets/logo.png" alt="Eastern Foxes Logo">
+        </a>
+        </div>
+        <div class="navbar">
+            <a class="navbar-button" href="team.html" id="team">TEAM</a>
+            <a class="navbar-button" href="robots.html" id="robots">ROBOTS</a>
+
+            <a class="navbar-button" href="achievements.html" id="achievements">ACHIEVEMENTS</a>
+            <a class="navbar-button" href="contact.html" id="contact">CONTACT</a>
+        </div>
+        <div class="container">
+            
+            <div class="home-img-container">
+              <div class="slideshow">
+                <img src="assets/images/slide2.jpg" alt="slide 2"/>
+                <img src="assets/images/slide3.jpg" alt="slide 3"/>
+                <img src="assets/images/slide4.jpg" alt="slide 4"/>
+                <!-- <img src="assets/images/slide6.jpg" alt="slide 6"/>
+                <img src="assets/images/slide7.jpg" alt="slide 7"/> -->
+              </div>
+              <img src="assets/LOGO_VECTORIZAT_PLUSNR.svg" alt="logo" class="home-logo"/>
+              <div class="line">
+                <p class="quote">
+                  "Fail. Optimize. Excel."
+                </p>
+
+              </div>
+            </div>
+            <div class="home-text-container">
+              <!-- <p>
+                Eastern Foxes belongs to the National College "Ion Luca Caragiale" - Ploiești.
+                <br><br>It was established in 2020, as a result of the motivation of some students who wanted to develop the STEM field in the local community. By representing the future of technology and science, their goal is to inspire as many people as possible to join this field through programs that promote life skills, leadership and innovation.
+              </p>
+              <p>
+               Eastern Foxes is now in their third season of FIRST Tech Challenge.<br><br>This is the third season of FIRST Tech Challenge for Eastern Foxes, but not for all of the members.
+               <br><br>With 15 students officially registered, 20 volunteers and 2 mentors, this team competes as team RO181 and #19098 to the BRD First Tech Challenge Championship 2023.
+              </p>
+              <br></br> -->
+              <ul class="home-text">
+                <li>
+                  Eastern Foxes belongs to the National College "Ion Luca Caragiale" - Ploiești.
+                  <br><br>It was established in 2020, as a result of the motivation of some students who wanted to develop the STEM field in the local community. By representing the future of technology and science, their goal is to inspire as many people as possible to join this field through programs that promote life skills, leadership and innovation.
+                </li>
+                <li>
+                  <img src="assets/images/slide1.jpg" alt="main1">
+                </li>
+                
+                <li>
+                  Our sponsors are the ones who help us achieve our goals. They are the ones who help us fund our robots, who help us travel to competitions, who help us with our projects and who help us with our outreach programs. We are grateful for their support and we hope to make them proud.
+                  <br><br> Thank you for your support!
+                </li>
+                <li>
+                  <img src="assets/images/sponsors.png" alt="main2">
+                </li>
+                <li>
+                  <img src="assets/images/slide5.jpg" alt="main2">
+                <li>
+                  Eastern Foxes is now in their third season of FIRST Tech Challenge.<br><br>This is the third season of FIRST Tech Challenge for Eastern Foxes, but not for all of the members.
+                  <br><br>With 15 students officially registered, 20 volunteers, 4 alumni and 2 mentors, this team competes as team RO181 and #19098 to the BRD First Tech Challenge Championship 2024.
+                </li>
+                <li>
+                  If you wish to become part of our story and help us achieve our goals, please follow the instructions here:
+                  <a href="sponsor.html" class="sponsor-link">Become a sponsor for FREE!</a>
+                </li>
+              </ul>
+              <br><br>
+            </div>
+          </div>
+    </div>
+
+    <script>
+      let team_text = "TEAM";
+      let robots_text = "ROBOTS";
+      let achievements_text = "ACHIEVEMENTS";
+      let contact_text = "CONTACT";
+      let team_icon = '<span class="material-symbols-outlined">group</span>';
+      let robots_icon = '<span class="material-symbols-outlined">build</span>';
+      let achievements_icon = '<span class="material-symbols-outlined">military_tech</span>';
+      let contact_icon = '<span class="material-symbols-outlined">contact_mail</span>';
+
+      $(window).resize(function() {
+        if ($(window).width() < 1500) {
+          $("#team").html(team_icon);
+          $("#robots").html(robots_icon);
+          $("#achievements").html(achievements_icon);
+          $("#contact").html(contact_icon);
+        } else {
+          $("#team").html(team_text);
+          $("#robots").html(robots_text);
+          $("#achievements").html(achievements_text);
+          $("#contact").html(contact_text);
+        }
+
+        // also do this on load
+        if ($(window).width() < 1500) {
+          $("#team").html(team_icon);
+          $("#robots").html(robots_icon);
+          $("#achievements").html(achievements_icon);
+          $("#contact").html(contact_icon);
+        } else {
+          $("#team").html(team_text);
+          $("#robots").html(robots_text);
+          $("#achievements").html(achievements_text);
+          $("#contact").html(contact_text);
+        }
+      });
+    </script>
+</body>
+</html>
